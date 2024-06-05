@@ -1,4 +1,6 @@
 import cloudinary from 'cloudinary';
+import dotenv from 'dotenv';
+dotenv.config();
 
 export const useCloudinaryConfig = ()=>{
     cloudinary.v2.config({ 

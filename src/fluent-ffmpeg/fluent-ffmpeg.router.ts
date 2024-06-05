@@ -3,9 +3,9 @@ import { ffmpegController } from './fluent-ffmpeg.controller';
 
 const router = express.Router();
 
-router.get('/', ffmpegController.index);
-router.post("/transcribe",ffmpegController.transcribeVideo)
-router.post("/merge-videos",ffmpegController.mergeVideos)
-
+router.post("/merge-videos",ffmpegController.mergeVideos);
+router.post("/convert-video-to-audio",ffmpegController.convertVideoToAudio);
+router.post("/generate-thumbnails",ffmpegController.generateThumbnails);
+router.post("/split-video",ffmpegController.splitVideo);
 export default router;
 
